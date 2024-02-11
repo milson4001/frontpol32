@@ -1,0 +1,131 @@
+// @import "bootstrap/scss/bootstrap";
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+// Utwórz sekcje <section> (posiada klase nadającą styl 500px
+// szerokości) w którym utworzysz 10 artykułów <article>, gdzie
+// każdy z artykułów posiada klase nadającą styl – width: 200px.
+// Następnie nadaj wlasciwosc flexbox za pomocą display dla
+// utworzonej sekcji – co zwróciło Twoją uwagę? :)
+
+.main {
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
+.main >.block-article:first-child {
+  flex-basis: 100px;
+}
+.main > .block-article {
+  width: 100px;
+  background-color: blueviolet;
+}
+
+.block-article:nth-child(4n){
+flex-grow: 4;
+}
+
+.main2 > .wrapper2 {
+  height: 100px;
+  width: 100px;
+  background-color: yellowgreen;
+
+}
+.main3 {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.h2 { 
+  position: absolute;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position:absolute;
+  top:0 ;
+  right:0;
+ 
+
+}
+
+.body {
+  height: 3000px;
+  background-color: blue;
+}
+.tag-header{
+  background-color: lightblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+}
+
+.tag-sticky {
+  padding-left: 200px;
+  height: 1000px;
+  position: relative;
+  background-color: bisque;
+}
+.sticky-div {
+  height: 150px;
+  width: 150px;
+  background-color: brown;
+  position: sticky;
+  top:0;
+}
+// Zadanie
+// Nadaj dla utworzonej sekcji z poprzedniego zadania właściwość
+// flex-wrap: <tutaj wybierz mądrze :)> - czy teraz już wszystko
+// wygląda jak należy?
+// Ciekawostka:
+// - Domyślnie display: flex ustawia właściwość "flex-wrap: nowrap", dlatego nieodłącznym elementem dla flexboxa jest
+// przestawianie tej właściwości
+
+// Zadanie
+// Wszystkie artykuły warto wyśrodkować tak aby wyglądało to
+// elegancko – dlatego wyśrodkuj elementy za pomocą właściwości
+// "justify-content" - która wartość wybierzesz aby wygląd był miły
+// dla oka?
+
+// Zadanie
+// Wszystkie artykuły warto wyśrodkować tak aby wyglądało to
+// elegancko – dlatego wyśrodkuj elementy za pomocą właściwości
+// "justify-content" - która wartość wybierzesz aby wygląd był miły
+// dla oka?
+
+// Zadanie
+// W poprzednim zadaniu ustawialismy szerokość elementu za
+// pomocą właściwości "width" - aktualnie poznaliśmy coś co jest
+// używane wraz z flexbox <flex-basis> - dlatego teraz ustawmy
+// szerokość elementu za pomocą poznanej przed chwilą
+// właściwości oraz zbadajmy za pomocą narzędzi deweloperskich
+// co na to przeglądarka.
+// ALE ALE – ustawmy ją tylko dla pierwszego elementu
+// (pseudoklasa :first-child)
+
+
+// Zadanie
+// Ustaw elementy dla co 4 elementu wartosc === 2 dla właściwości
+// flex-grow, każdy inny element powinien mieć wartosc 1
+
+// Zadanie
+// Utwórz sekcje która zawiera 3 elementy div. Każdy z tych
+// elementów div posiada klase która nakłada style szerokość i
+// wysokość 200px oraz background-color (kolor dowolny).
+// Następnie dla jednego <div> z 3 nadaj wlasciwość position:
+// relative i spróbuj przesunac element dzieki odpowiednim
+// właściwościom.
+// Przydatne linki:
+// - https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
